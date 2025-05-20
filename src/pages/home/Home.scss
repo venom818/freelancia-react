@@ -1,0 +1,88 @@
+// .home
+// {
+//  position: absolute;
+//   top: 0px;
+//   left: 0px;
+//   right: 0px;
+//   bottom: 20px;
+//   overflow-y: auto; // If your content is scrollable
+
+// }
+
+.home {
+  // Your existing home styles if any
+}
+
+.features {
+  position: relative; 
+  
+  width: 100%; 
+  height: 700px; 
+  overflow: hidden; // Hides any video content that might spill out
+top: -50px;
+  .container {
+    position: absolute; // Make the container fill the features section
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    justify-content: center; // Center content horizontally
+    align-items: center; // Center content vertically
+    
+
+    .video-player-wrapper {
+      position: absolute; 
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden; 
+      z-index: 1; 
+
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; // IMPORTANT: Makes the video cover the entire area without distortion
+        
+      }
+    }
+
+    .video-overlay-text {
+      position: relative; 
+                          
+      z-index: 2; 
+      color: white; 
+      text-align: center;
+      padding: 20px; // Add some padding
+      background-color: rgba(0, 0, 0, 0.3); 
+      border-radius: 8px; 
+
+      h1 {
+        font-size: 3rem; 
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+      }
+
+      button {
+        padding: 12px 25px;
+        background-color: #1DBF73; // Example green color
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        
+        &:hover {
+          background-color: #17a363;
+        }
+      }
+    }
+  }
+}
