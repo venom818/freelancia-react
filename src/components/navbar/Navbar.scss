@@ -7,8 +7,8 @@ display:flex;
 flex-direction: column;
 // justify-content: center;
 align-items: center;
-// /background-color: #0a1420;
- background-image: linear-gradient(to right, #26b6cc, #0bc5f4);
+background-color: #b36c40;
+//  background-image: linear-gradient(to right, #df8823, #e2a742);
 color: #f7faff;
 width: 100%;
 position: fixed;
@@ -21,7 +21,7 @@ transition: 0.5s all ease;
 &.active{
 
     background-color: #ffffff;
-    color: rgb(250, 250, 250);
+    color: rgb(26, 20, 20);
 }
 
     .container{
@@ -35,7 +35,15 @@ transition: 0.5s all ease;
             font-weight: bold;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             
-            .text{
+            .image{
+               display: flex;
+               align-items: center;
+               height: 100%;
+            }
+            img{
+               height: 40px;
+               object-fit: contain;
+               width: 150px; //if your logi has text you might want a fix width as well
             }
             
         }
@@ -81,7 +89,7 @@ transition: 0.5s all ease;
             }
 
             button{
-                color: white;
+                color: rgb(221, 209, 209);
                 padding: 10px 20px;
                 border-radius: 5px;
                 border: 1px solid white;
@@ -108,10 +116,10 @@ transition: 0.5s all ease;
     display: flex;
     justify-content: space-between; /* Center the menu items */
     gap: 20px;
-    padding: 1px 0px; 
+    padding: 10px 0px; 
     font-weight: 300;
-     background-image: linear-gradient(to right, #26b6cc, #0bc5f4);
-    color: rgb(248, 241, 241);
+     background-color: #f9f8f7;
+    color: rgb(23, 11, 11);
     font-family: Helvetica, Arial, Roboto, Poppins;
 
   }

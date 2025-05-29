@@ -5,11 +5,9 @@ const Featured = () => {
         <div className='featured'>
         {/* inside the container we re gonna have ads type of thing basically middle part of home page
         right ma photo left ma shearch and some text */}
-         
         <div className="container"> 
-        
            <div className="left">
-             <h1>Find the perfume freelancingservis for you </h1>
+             <h1>Find the freelancing Service</h1>
              <div className="search">
                 <div className="searchInput">
                     <img src="./img/search.png" alt=""/>
@@ -26,7 +24,7 @@ const Featured = () => {
               </div>
            </div>
            <div className="right">
-             {/* <img src="./img/omen.png" alt=""/> */}
+             
            </div>
 
         </div>

@@ -9,21 +9,22 @@ import Gig from "./pages/gig/Gig";
 import Add from "./pages/add/Add";
 import Messages from "./pages/messages/Messages";
 import Message from "./pages/message/Message";
+import Login from "./pages/login/Login";
+import Register from "./pages/register/Register";
 import {createBrowserRouter,RouterProvider,Outlet} from "react-router-dom";
 import './App.scss'
+import WCard from "./components/wCard/WCard";
 
 function App(){
  const Layout = () =>{
     return(
         <div className="app">
             <Navbar/>
-            
-          <Outlet/>  
+          <Outlet/>
         <Footer/>
         </div>
     );
  };
-
     //adding router
     const router = createBrowserRouter([
   {
@@ -61,7 +62,16 @@ function App(){
         { 
             path: "/message/:id",
             element: <Message/>,
-        }
+        },
+        {
+            path: "/login",
+            element: <Login/>,
+        },
+        {
+            path: "/register",
+            element: <Register/>,
+        },
+
     ]
   },
 ]);  // router added 
@@ -70,8 +80,10 @@ function App(){
         <div>
         {/* <Navbar/>  //yo nav bar hatayae paxi balla logo click garda automatically home ma gayp */}
         <RouterProvider router={router} />
-        
         </div>
     );
 }
 export default App;
+
+
+

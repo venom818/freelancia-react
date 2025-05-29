@@ -12,7 +12,7 @@ const Slide =({children,slidesToShow,autoplay}) =>{
           {children}
           {/* {cards.map (card=>(
             <CatCard item={card} key={card.id}/>
-          ))} video ma kate xa ekxin lai*/}
+          ))}  kate xa ekxin lai*/}
   </Slider> 
             </div>
         </div>

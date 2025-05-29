@@ -1,11 +1,13 @@
 .featured{
-     height: 300px;
+     height:600px;
         display: flex;
         justify-content: center;
-        background-color: #5899e9;
-         background-image: linear-gradient(to right, #e6973d, #e2bc3f,#f3c83d, #e18923,);
-          background-image: linear-gradient(to right, #2fd2d8, #38abd5,#33d0e1, #04dcd1,);
+      background: url('/img/beautiful.png') no-repeat center center;
+        background-size: cover;
         color: white;
+       top: -27px;
+       position: relative;
+       opacity: 95%; 
     .container{
       position: relative; //not prignal 
        width: 1400px;
@@ -18,7 +20,8 @@
         flex-direction:column ;
 
         h1{
-          font-size: 50px;
+          
+          font-size: 60px;
         }
 
         .search{
@@ -46,7 +49,7 @@
             width: 120px;
             height:50px ;
             border: none;
-            background-color: #1579e4;
+            background-color: #e08d52;
             color: white;
             cursor: pointer;
           }
@@ -79,8 +82,6 @@
           object-fit: contain;
         }
        }
-    
-
 
     }
 }  
